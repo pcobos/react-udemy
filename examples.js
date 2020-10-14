@@ -24,3 +24,17 @@ const filter = (...args) => {
 }
 
 console.log(filter(1, 2, 3))
+
+// Destructuring
+// Allows us to extract single elements or properties from arrays and objects and store them in variables
+const digits = [1, 2, 3, 4];
+[d1, d2] = [1, 2]
+console.log(d1, d2);
+
+const dog = {
+  name: "Hapu",
+  age: 8,
+  color: "Yellow"
+};
+{name, color} = { name:"Hapu", color: "yellow"};
+console.log(name, color)
