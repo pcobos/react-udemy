@@ -16,3 +16,11 @@ const newPerson = {
 }
 
 console.log(newPerson);
+
+// Rest Operator
+// When used in a function, the Rest operator allows us to pass several arguments when calling said function. The arguments will be stored in an array, therefore, we can manipulate with array methods such as filter
+const filter = (...args) => {
+  return args.filter(el => el === 1);
+}
+
+console.log(filter(1, 2, 3))
